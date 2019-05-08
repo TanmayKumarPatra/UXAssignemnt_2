@@ -1,0 +1,19 @@
+<!-- <figure id="video_player"> -->
+		<!-- 		<video id="videoPlayer" preload="none" poster="image1.PNG" controls>
+					<source src="movie.mp4" type="video/mp4">
+					<source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video> -->			
+				<!-- <figcaption>
+					<a href="movie.mp4"><img alt="1" src="image1.PNG"></a>
+					<a href="movie.mp4"><img alt="2" src="image1.PNG"></a>
+					<a href="movie.mp4"><img alt="3" src="image1.PNG"></a>
+				</figcaption>
+      </figure> -->
+    <!-- </div>*ngFor="let video of videos" -->
+     <div *ngFor="let video of videoList"> 
+
+   <video id="video" class="video-js vjs-default-skin" controls width="640px" height="360px" 
+   src="{{video.src}}" type="video/mp4">
+</video>
+ </div>  
