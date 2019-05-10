@@ -1,3 +1,9 @@
-<p>
-  playlist works!
-</p>
+ <ul>
+	 <li *ngFor="let video of videoList.youtube"  (click)="playVideo(video.src)" >
+		 <a href ="javascript:void(0)" >{{video.src}}</a>
+	 </li>
+ </ul>
+
+
+
+ 

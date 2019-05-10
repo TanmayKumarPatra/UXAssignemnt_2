@@ -1,7 +1,9 @@
 {
 	"youtube": [{
 		"title": "Sadhguru and Physics",
+		"id":1,
 		"url": "https://www.youtube.com/watch?v=pAluQXDTM9g",
+		"src":"video1.mp4",
 		"status": "added",
 		"approved": 1,
 		"likes": 22,
@@ -10,7 +12,9 @@
 		"exitplayprogress": 30
 	}, {
 		"title": "Angular 6 Tutorial",
+		"id":2,
 		"url": "https://www.youtube.com/watch?v=BoxuTR4ruUs",
+		"src":"sample.mp4",
 		"status": "added",
 		"approved": 0,
 		"likes": 0,
@@ -19,7 +23,9 @@
 		"exitplayprogress": 0
 	}, {
 		"title": "Nikon P900 83X Zoom",
+		"id":3,
 		"url": "https://www.youtube.com/watch?v=m7kdx9b_Jvk",
+		"src":"video1.mp4",
 		"status": "added",
 		"approved": 1,
 		"likes": 10,
@@ -28,7 +34,9 @@
 		"exitplayprogress": 80
 	}, {
 		"title": "Understanding Javascript",
+		"id":4,
 		"url": "https://www.youtube.com/watch?v=Bv_5Zv5c-Ts",
+		"src":"sample.mp4",
 		"status": "edited",
 		"approved": 0,
 		"likes": 25,

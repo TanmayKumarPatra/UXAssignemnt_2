@@ -1,9 +1,9 @@
  		<div>
-					<button id="play" class="btn btn-default" (click)="playPause()">
+					<button id="play" class="btn btn-default" (click)="playPause()" [disabled]= "disablePlay">
 						<span class="fa fa-play"></span>
 						
 					</button>
-					<button id="pause" class="btn btn-default" (click)="pauseVideo()">
+					<button id="pause" class="btn btn-default" (click)="pauseVideo()" [disabled]= "disablePause">
 						<span class="fa fa-pause"></span>
 					
 					</button>
