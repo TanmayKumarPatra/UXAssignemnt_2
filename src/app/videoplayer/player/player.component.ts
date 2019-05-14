@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
-import { PlaylistComponent } from '../playlist/playlist.component';
+import { Component, OnInit, ViewChild, ElementRef, Input, Inject } from '@angular/core';
+// import { PlaylistComponent } from '../playlist/playlist.component';
 import { VideoplayerService } from '../videoplayer.service';
 
 @Component({
@@ -15,8 +15,8 @@ export class PlayerComponent implements OnInit {
   @Input() videoUrl: any;
   parentMessage;
   constructor(private videoplayerService: VideoplayerService) {
-    
-   }
+     
+  }
 
   ngOnInit() {
     this.videoSource = '/assets/video1.mp4';

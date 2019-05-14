@@ -9,6 +9,9 @@ import { ControlsComponent } from './videoplayer/controls/controls.component';
 import { PlaylistComponent } from './videoplayer/playlist/playlist.component';
 import { AddnewvideoComponent } from './addnewvideo/addnewvideo.component';
 import { VideoPlayerModule } from './videoplayer/videoplayer.module';
+import { StorageServiceModule} from 'angular-webstorage-service';
+import {  FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import { VideoPlayerModule } from './videoplayer/videoplayer.module';
     BrowserModule,
     AppRoutingModule,
     VideoPlayerModule,
-    HttpModule
+    HttpModule,
+    StorageServiceModule,
+    FormsModule
     
   ],
   providers: [],

@@ -1,3 +1,54 @@
-<p>
-  addnewvideo works!
-</p>
+<!-- <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+    <form #form="ngForm" (ngSubmit)="registerUser(form)">  
+  <div class="col-md-12" style="margin-top:10%">
+    <div class="form-group row" style="margin-left:20%">
+      <label for="Title">Title</label>
+      <input type="text" style="margin-left: 7%; padding-right: 20%;" class="form-control" required name="title" [(ngModel)]="model.title" #title="ngModel" [ngClass]="{ 'is-invalid': f.submitted && title.invalid }" >
+      <span class="help-bpx" *ngIf="title.touched && !title.valid ">Please enter the Email Value</span>
+    </div>
+    <div class="form-group row" style="margin-left: 20%; margin-top: 20px;">
+      <label for="url" >Youtube URL</label>
+      <input type="url" style="margin-left: 3%; padding-right: 20%;" class="form-control" required name="url" [(ngModel)]="model.url" #url="ngModel" [ngClass]="{ 'is-invalid': f.submitted && url.invalid }">
+      <div *ngIf="f.submitted && url.invalid" class="invalid-feedback">
+        <div *ngIf="url.errors.url">Email must be a valid URL address</div>
+    </div>
+    <div *ngIf="f.submitted && url.invalid" class="invalid-feedback">
+      <div *ngIf="url.errors.required">First Name is required</div>
+  </div>
+    </div>
+    <div class="form-group row" style="margin-top:20px; margin-left:40%">
+      <button class="btn btn-primary">Add Video</button>
+    </div>
+  </div>
+</form>
+
+
+ -->
+ <div class="container">  
+    <div class="row">  
+        <div class="form_bg">  
+            <form #regForm='ngForm' (ngSubmit)="Register(regForm)" >  
+                 <h2 class="text-center">Add New Video page</h2>  
+                <br/>  
+                <div class="form-group" style="margin-left:20%">  
+                    <label for="Title">Title</label>
+                    <input type="text"  style="margin-left: 7%; padding-right: 20%;"  class="form-control" placeholder="First Name" #title="ngModel" name="firstname" required  ngModel > 
+                    <div class="help-bpx" style="margin-left: 9%; padding-right: 20%;" *ngIf="title.touched && !title.valid ">Please enter the title</div>
+  
+                </div>  {{firstname.valid}}
+                <div class="form-group" style="margin-left:20%; margin-top:20px">   
+                    <label for="url" >Youtube URL</label>
+                    <input type="url"  style="margin-left: 3%; padding-right: 20%;" pattern="https?://.+" class="form-control"  placeholder="URL" name="url" #url="ngModel" required ngModel>
+                    <div class="help-bpx" style="margin-left: 9%; padding-right: 20%;" *ngIf=" (url.touched && url.errors.required) && !url.errors.pattern  ">Please enter the url</div>
+                    <div class="help-bpx" style="margin-left: 9%; padding-right: 20%;" *ngIf="url.errors.pattern">Must be a valid site URL</div>  
+                </div>  
+                 <div class="form-group">  
+                </div>  
+                <br/>  
+                <div class="align-center" style="margin-left:37%;">  
+                    <button type="submit" class="btn btn-primary"  id="register"  >Add Video</button>  
+                </div>  
+            </form>  
+        </div>  
+    </div>  
+  </div>

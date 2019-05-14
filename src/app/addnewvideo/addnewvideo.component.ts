@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormsModule, NgForm } from '@angular/forms';
 @Component({
   selector: 'app-addnewvideo',
   templateUrl: './addnewvideo.component.html',
@@ -11,5 +11,11 @@ export class AddnewvideoComponent implements OnInit {
 
   ngOnInit() {
   }
+ /*  onSubmit(){
+    console.log('hi')
+  } */
+  Register(regForm:NgForm){  
+    console.log(regForm);  
+  }  
 
 }
